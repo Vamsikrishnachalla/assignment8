@@ -1,0 +1,25 @@
+<ion-view view-title="Browse">
+  <ion-content>
+      <div>
+                <label class="item item-input">
+                <span class="input-label" value="enter the recipe name here"></span>
+                <input type="text" ng-model="homedata">
+                </label>
+              <div ng-controller="mycontroller1" align="center">
+                  <button type="submit" ng-click="converttoSpeech()" class="button button-block button-positive" >Get Recipe</button>
+                 <p ng-model="recipename">{{recipename}}</p>
+                  <img ng-src={{image}} width="400dp" height="300"/>
+                  <button type="submit" ng-click="view()">View</button>
+                 
+              </div>
+             <div ng-controller="mycontroller2" align="center   ">
+                <button type="submit" ng-click="sentimentCheck()" class="button button-block button-positive">Check Sentiment</button>
+                <textarea  align="center" ng-model="output1" >{{output1}}</textarea>
+                <textarea  align="center" ng-model="output2" >{{output2}}</textarea>
+                 
+             </div>
+        </div>
+      
+  </ion-content>
+</ion-view>
+
